@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UC</string>
+    <string name="ContentBehavior" >com.example.yangg.uc.Behavior.ContentBehavior</string>
+    <string name="NewsPagerBehavior" >com.example.yangg.uc.Behavior.NewsPagerBehavior</string>
+    <string name="tabBehavior" >com.example.yangg.uc.Behavior.tabBehavior</string>
+    <string name="TitleBehavior" >com.example.yangg.uc.Behavior.TitleBehavior</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        app:layout_behavior="@string/NewsPagerBehavior"
+        android:id="@+id/fl_head"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_head"
+            android:gravity="center_vertical"
+            android:text="NewsPaget"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:textColor="#333"
+            android:padding="12dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <FrameLayout
+        app:layout_behavior="@string/TitleBehavior"
+        android:background="#486ef9"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="uc 头条"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        app:layout_behavior="@string/tabBehavior"
+        android:id="@+id/tab_layout"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="#a3a1ff"
+        app:tabTextColor="#bbffffff"
+        app:tabSelectedTextColor="#c9c9c9"
+        app:tabGravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <android.support.v4.view.ViewPager
+
+        app:layout_behavior="@string/ContentBehavior"
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5ffffff"/>
+
+</android.support.design.widget.CoordinatorLayout>
